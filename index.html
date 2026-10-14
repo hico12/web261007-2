@@ -10,11 +10,24 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>내 영화 보드</h1>
+<header class="top">
+    <h1>내 영화 보드</h1>
+    <nav>
+      <ul>
+        <li><a href="#board">보드</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#">상세</a></li>
+      </ul>
+    </nav>
+</header>
+<section class="hero">
+    <h2>요즘 내가 고른 영화 다섯편</h2>
+    <p>포스터 위에 마우스를 올려보세요</p>
+</section>
  <main>
     <section>
     <h2>내 인생 영화 5편</h2>
-    <div class="board">
+    <div class="board" id="board">
  <article class="card">
 
 
@@ -73,7 +86,7 @@
  <span class="badge">8.4</span>
  <div class="info">
  <h2>인터스텔라</h2>
- <p class="year">2019</p>
+ <p class="year">2014</p>
  <p class="overview">세계 각국의 정부와 경제가 완전히 붕괴된 미래가 다가온다. 
    지난 20세기에 범한 잘못이 전 세계적인 식량 부족을 불러왔고, NASA도 해체되었다.
     나사 소속 우주비행사였던 쿠퍼는 지구에 몰아친 식량난으로 옥수수나 키우며 살고 있다. 
@@ -90,7 +103,7 @@
  <span class="badge">7.6</span>
  <div class="info">
  <h2>엑시트</h2>
- <p class="year">2014</p>
+ <p class="year">2019</p>
  <p class="overview">대학교 산악 동아리 에이스 출신이지만 졸업 후 몇 년째 취업 실패로 눈칫밥만 먹는 
    용남은 온 가족이 참석한 어머니의 칠순 잔치에서 연회장 직원으로 취업한 동아리 후배 의주를 만난다. 
    어색한 재회도 잠시, 칠순 잔치가 무르익던 중 의문의 연기가 빌딩에서 피어 오르며 피할 새도 없이 순식간에 서울 도심은 유독가스로 뒤덮여 일대혼란에 휩싸이게 된다.
@@ -102,6 +115,10 @@
 </div>
  </section>
  </main>
+ <section id="about">  
+  <h2>카드 아랫부분 확대</h2>
+  <p>제목,개봉연도,줄거리 첫 문장</p>
+ </section>
  <footer>
  <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
  This product uses the TMDB API but is not endorsed or certified by TMDB.</p>

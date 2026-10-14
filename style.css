@@ -1,7 +1,14 @@
+.top{display:flex;
+    justify-content:
+    space-between;
+    align-items:center;
+    }
+
+
 body{
     background-color: pink;
 }
-.card{width:260px;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.3);background-color:#fff;margin:0 auto;}
+.card{border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.3);background-color:#fff;margin:0 auto;}
 
 .info{padding:12px 16px;}
 
@@ -21,7 +28,20 @@ body { background: linear-gradient(135deg, #141e30, #243b55); min-height: 100vh;
 
 .board {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     gap: 12px;
+}
+
+.top ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    padding: 0;
+}
+
+.hero{
+    text-align: center;
+    padding: 40px 20px;
+    color:white;
 }
