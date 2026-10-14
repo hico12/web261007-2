@@ -17,8 +17,11 @@ body{
 
 body { background: linear-gradient(135deg, #141e30, #243b55); min-height: 100vh; box-sizing: border-box; margin: 0; padding: 40px; font-family: "*Noto Sans KR*", sans-serif; }
 
-.board{
+
+
+.board {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:12px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    justify-content: center;
+    gap: 12px;
 }
